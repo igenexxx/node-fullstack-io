@@ -1,0 +1,33 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/mongoose": "^5.7.12",
+    "aws-sdk": "^2.658.0",
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "cli-table": "^0.3.1",
+    "cookie-parser": "^1.4.5",
+    "cuid": "^2.1.8",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "json-array-streams": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.9",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "through2": "^3.0.1",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6"
+  }
+}

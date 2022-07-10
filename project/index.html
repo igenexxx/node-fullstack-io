@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            flex-flow: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        const url = `http://localhost:1337/products`;
+        fetch(url).then(res => res.json()).then(res => {
+          const images = res.map(({ urls: { thumb: image }}) => {
+            return `<div class='image-container'><img src="${image}" alt=""></div>`;
+          }).join('');
+
+          document.querySelector('.container').insertAdjacentHTML('afterbegin', images);
+        });
+    </script>
+</body>
+</html>
